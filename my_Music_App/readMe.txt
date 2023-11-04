@@ -21,7 +21,7 @@ Before running this application, make sure you have the following:
 1. Unzip the folder/Clone this repository:
 
    ```shell
-   git clone 
+   git clone "https://github.com/PATILSHUBHAM69/MyMusicApp.git"
 
 2. Create a .env file in the project root directory with the following content, 
 replacing the placeholders with your database credentials:
