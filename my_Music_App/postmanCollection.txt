@@ -1,0 +1,21 @@
+1. Insert a new Song(Name,Artists,Genre,Publish Year, Language) in App.
+=== Select "POST" request
+=== http://localhost:8082/insertNewSong
+=== Records for postman, paste following 10 records in raw/json 
+
+{"name": "Song1","artists": "Artist1","genre": "Genre1","publishyear": 2021,"language": "Language1"}
+{"name": "Song2","artists": "Artist2","genre": "Genre2","publishyear": 2020,"language": "Language2"}
+{"name": "Song3","artists": "Artist3","genre": "Genre3","publishyear": 2010,"language": "Language3"}
+{"name": "Song4","artists": "Artist4","genre": "Genre2","publishyear": 2022,"language": "Language1"}
+{"name": "Song5","artists": "Artist5","genre": "Genre4","publishyear": 2023,"language": "Language2"}
+{"name": "Song6","artists": "Artist6","genre": "Genre1","publishyear": 2015,"language": "Language3"}
+{"name": "Song7","artists": "Artist7","genre": "Genre5","publishyear": 2012,"language": "Language1"}
+{"name": "Song8","artists": "Artist8","genre": "Genre4","publishyear": 2016,"language": "Language2"}
+{"name": "Song9","artists": "Artist9","genre": "Genre2","publishyear": 2002,"language": "Language3"}
+{"name": "Song10","artists": "Artist10","genre": "Genre10","publishyear": 2011,"language": "Language4"}
+
+
+2. Retieve songs by specific Genre and pagination is 10 row per page. 
+To see more records than 10 increment page no.
+=== Select "GET" request
+=== http://localhost:8082/getSongByGenre/<genre_name>?<page=1>
